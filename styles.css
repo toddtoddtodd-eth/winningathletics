@@ -49,11 +49,13 @@ a{ color:inherit; text-decoration:none; }
 }
 .nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:76px; }
 .brand{ display:flex; align-items:center; gap:12px; }
-.brand svg{ width:36px; height:auto; flex-shrink:0; }
+.brand svg{ width:36px; height:auto; flex-shrink:0; display:block; }
 .brand .word{
   font-family:var(--font-display); font-weight:900; letter-spacing:-.03em; font-size:16px; color:var(--bone);
+  line-height:1;
 }
 .nav-links{ display:flex; align-items:center; gap:32px; }
+.nav-ctas{ display:flex; align-items:center; gap:10px; }
 .nav-links a{
   font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
   color:var(--bone); opacity:.75; transition:opacity .15s, color .15s;
@@ -148,6 +150,7 @@ section{ padding:96px 0; }
   color:var(--crown); font-weight:700; display:block; margin-bottom:6px;
 }
 .p-card-label h4{ font-family:var(--font-display); font-weight:900; margin:0; font-size:18px; color:var(--bone); }
+.programs-note{ margin:28px 0 0; font-size:14px; color:var(--muted); max-width:56ch; }
 
 /* stats */
 .stats-band{ padding:0; }
